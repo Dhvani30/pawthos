@@ -18,32 +18,67 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-[#4CAF50] to-[#E2725B] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xl">🐾</span>
               </div>
-              <span className="text-xl font-bold" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              <span
+                className="text-xl font-bold"
+                style={{ fontFamily: "Poppins, sans-serif" }}
+              >
                 Paws & Progress
               </span>
             </div>
-            <p className="text-gray-400 text-sm">
-              {t('footer.tagline')}
-            </p>
+            <p className="text-gray-400 text-sm">{t("footer.tagline")}</p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              {t('footer.quickLinks')}
+            <h3
+              className="font-semibold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
-              <li><Link href="/how-it-works" className="text-gray-400 hover:text-[#4CAF50] text-sm">{t('nav.howItWorks')}</Link></li>
-              <li><Link href="/success-stories" className="text-gray-400 hover:text-[#4CAF50] text-sm">{t('nav.stories')}</Link></li>
-              <li><Link href="/for-pet-owners" className="text-gray-400 hover:text-[#4CAF50] text-sm">{t('nav.petOwners')}</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-[#4CAF50] text-sm">{t('nav.about')}</Link></li>
+              <li>
+                <Link
+                  href="/how-it-works"
+                  className="text-gray-400 hover:text-[#4CAF50] text-sm"
+                >
+                  {t("nav.howItWorks")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/success-stories"
+                  className="text-gray-400 hover:text-[#4CAF50] text-sm"
+                >
+                  {t("nav.stories")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/for-pet-owners"
+                  className="text-gray-400 hover:text-[#4CAF50] text-sm"
+                >
+                  {t("nav.petOwners")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-[#4CAF50] text-sm"
+                >
+                  {t("nav.about")}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              {t('footer.contact')}
+            <h3
+              className="font-semibold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              {t("footer.contact")}
             </h3>
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-gray-400 text-sm">
@@ -63,17 +98,29 @@ export default function Footer() {
 
           {/* Social Media */}
           <div>
-            <h3 className="font-semibold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              {t('footer.followUs')}
+            <h3
+              className="font-semibold mb-4"
+              style={{ fontFamily: "Poppins, sans-serif" }}
+            >
+              {t("footer.followUs")}
             </h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-[#4CAF50] transition-colors">
+              <a
+                href="https://www.facebook.com/"
+                className="text-gray-400 hover:text-[#4CAF50] transition-colors"
+              >
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#4CAF50] transition-colors">
+              <a
+                href="https://www.instagram.com/"
+                className="text-gray-400 hover:text-[#4CAF50] transition-colors"
+              >
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-[#4CAF50] transition-colors">
+              <a
+                href="https://x.com/"
+                className="text-gray-400 hover:text-[#4CAF50] transition-colors"
+              >
                 <Twitter className="w-6 h-6" />
               </a>
             </div>
@@ -81,7 +128,9 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Paws & Progress. {t('footer.rights')}.</p>
+          <p>
+            © {new Date().getFullYear()} Paws & Progress. {t("footer.rights")}.
+          </p>
         </div>
       </div>
     </footer>
